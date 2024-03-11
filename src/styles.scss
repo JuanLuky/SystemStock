@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+  margin: 0 auto;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: black;
+  color: aliceblue;
+
+  .container {
+    margin: auto;
+    max-width: 1200px;
+    width: 90%;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 0 !important;
+}
