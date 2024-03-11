@@ -79,11 +79,13 @@
     align-items: center;
     justify-content: space-between;
 
+
     .players-best {
       flex: 1;
       text-align: center;
       padding: 30px;
-      background-color: rgb(44, 44, 44);
+
+
 
       header {
         display: flex;
@@ -101,9 +103,15 @@
       }
 
       .player-content {
+        gap: 26px;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
+
+        .card-player {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
 
         .player-left {
           display: flex;
