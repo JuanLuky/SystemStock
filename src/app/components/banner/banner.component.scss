@@ -1,0 +1,23 @@
+:host {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 140px;
+  margin-top: 60px;
+}
+h1 {
+  font-size: 50px;
+  color: rgb(71, 47, 3);
+  font-weight: bold;
+  text-align: center;
+}
+p {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  color: rgb(150, 150, 150);
+}
+img {
+  width: 800px;
+}

@@ -1,12 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
-
+html .mat-mdc-fab.mat-accent {
+  --mdc-fab-container-color: #ce6f30;
+}
 html,
 body {
   margin: 0 auto;
@@ -17,21 +18,17 @@ body {
 body {
   margin: 0;
   font-family: sans-serif;
-  background-color: black;
-  color: aliceblue;
+  background-color: rgb(236, 227, 212);
+  color: rgb(21, 25, 29);
 
-  .container {
-    margin: auto;
-    max-width: 1200px;
-    width: 90%;
-  }
 }
-
+ul,li {
+  list-style-type: none;
+}
 body::-webkit-scrollbar {
   width: 0 !important;
 }
-footer {
-  padding: 30px;
-  color: white;
-  text-align: center;
-}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,55 @@
+.container {
+  padding: 40px 10px;
+  width: 140px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  z-index: 2;
+
+  color: white;
+  background-color: rgb(71, 47, 3);
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 50px;
+    h1 {
+      color: rgb(252, 252, 252);
+      font-weight: bold;
+      font-size: 20px;
+    }
+    img {
+      margin-top: -22px;
+      width:40px;
+    }
+
+
+  }
+  .navigate {
+    ul {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 30px;
+
+      li {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+
+        img {
+          width: 22px;
+        }
+      }
+    }
+  }
+}
