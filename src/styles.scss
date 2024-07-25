@@ -5,6 +5,10 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
+html {
+  /* 10px */
+  font-size: 62.5%;
+}
 html .mat-mdc-fab.mat-accent {
   --mdc-fab-container-color: #ce6f30;
 }
@@ -13,6 +17,11 @@ body {
   margin: 0 auto;
   height: 100%;
   font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+
+  @media (max-width:1200px) {
+    font-size: 1.2rem;
+  }
 }
 
 body {
@@ -32,3 +41,5 @@ body::-webkit-scrollbar {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
