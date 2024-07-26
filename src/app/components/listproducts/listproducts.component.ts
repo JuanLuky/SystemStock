@@ -16,7 +16,6 @@ import { StockHttpDatabase } from '../../services/stock.service';
   standalone: true,
   imports: [MatCardModule,MatProgressSpinnerModule, MatTableModule, MatSortModule, MatPaginatorModule, DatePipe],
   templateUrl: './listproducts.component.html',
-  styleUrl: './listproducts.component.scss'
 })
 export class ListproductsComponent implements AfterViewInit{
   displayedColumns: string[] = ['created', 'state', 'number', 'title'];
@@ -34,7 +33,6 @@ export class ListproductsComponent implements AfterViewInit{
   constructor(private _httpClient: HttpClient, private _service: StockHttpDatabase) {
 
    }
-
 
   ngAfterViewInit(): void {
     this.exampleDatabase = new StockHttpDatabase (this._httpClient);

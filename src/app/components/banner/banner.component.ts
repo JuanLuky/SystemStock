@@ -6,7 +6,6 @@ import { MatCardModule } from '@angular/material/card';
   standalone: true,
   imports: [MatCardModule],
   templateUrl: './banner.component.html',
-  styleUrl: './banner.component.scss'
 })
 export class BannerComponent {
 

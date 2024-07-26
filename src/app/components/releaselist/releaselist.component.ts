@@ -6,7 +6,6 @@ import { MatCardModule } from '@angular/material/card';
   standalone: true,
   imports: [MatCardModule],
   templateUrl: './releaselist.component.html',
-  styleUrl: './releaselist.component.scss'
 })
 export class ReleaselistComponent {
 

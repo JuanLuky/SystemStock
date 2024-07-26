@@ -13,7 +13,7 @@ export class StockHttpDatabase {
   constructor(private http: HttpClient) {}
 
   getRepoIssues(sort: string, order: SortDirection, page: number): Observable<GithubApi> {
-    const requestUrl = `${this.GITHUB_API_URL}?q=repo:angular/components&sort=${sort}&order=${order}&page=${page + 1}&per_page=10`;
+    const requestUrl = `${this.GITHUB_API_URL}?q=repo:angular/components&sort=${sort}&order=${order}&page=${page + 1}&per_page=12`;
 
     return this.http.get<GithubApi>(requestUrl);
   }

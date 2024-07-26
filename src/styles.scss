@@ -1,13 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-}
-html {
-  /* 10px */
-  font-size: 62.5%;
 }
 html .mat-mdc-fab.mat-accent {
   --mdc-fab-container-color: #ce6f30;
@@ -17,17 +16,13 @@ body {
   margin: 0 auto;
   height: 100%;
   font-family: "Inter", sans-serif;
-  font-size: 1.6rem;
-
-  @media (max-width:1200px) {
-    font-size: 1.2rem;
-  }
+  overflow: hidden;
 }
 
 body {
   margin: 0;
   font-family: sans-serif;
-  background-color: rgb(236, 227, 212);
+  background-color: white;
   color: rgb(21, 25, 29);
 
 }
