@@ -17,11 +17,12 @@ import { provideNativeDateAdapter } from '@angular/material/core';
 import { FormControl } from '@angular/forms';
 import { MAT_DATE_FORMATS } from '@angular/material/core';
 
-import * as _moment from 'moment';
+import * as moment from 'moment';
+
 import { default as _rollupMoment } from 'moment';
 import { Subject, Observable } from 'rxjs';
 
-const moment = _rollupMoment || _moment;
+const moments = _rollupMoment || moment;
 
 export class MyFormat {
   value = 1;
