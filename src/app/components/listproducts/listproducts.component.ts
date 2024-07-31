@@ -1,14 +1,13 @@
 import { DatePipe } from '@angular/common';
-import { AfterViewInit, Component, inject, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ViewChild } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
-import {MatSort, MatSortModule, SortDirection} from '@angular/material/sort';
+import {MatSort, MatSortModule} from '@angular/material/sort';
 import {MatTableModule} from '@angular/material/table';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { GithubIssue } from '../../model/GithubIssue';
-import { catchError, map, merge, startWith, switchMap, of, Observable } from 'rxjs';
+import { catchError, map, merge, startWith, switchMap, of } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { GithubApi } from '../../model/GithubApi';
 import { StockHttpDatabase } from '../../services/stock.service';
 
 @Component({
