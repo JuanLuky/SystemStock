@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +13,10 @@
 html .mat-mdc-fab.mat-accent {
   --mdc-fab-container-color: #ce6f30;
 }
+
+.mat-progress-spinner circle, .mat-spinner circle {
+  stroke: #ce6f30!important;
+  }
 html,
 body {
   margin: 0 auto;
