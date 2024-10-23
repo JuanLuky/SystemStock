@@ -15,7 +15,6 @@ import { SidebarComponent } from '../sidebar/sidebar.component';
 import { StockHttpService } from '../../services/stock.service';
 import { catchError, Observable, of, tap } from 'rxjs';
 import { MovementPage } from '../../model/movement-page';
-import { ProductPage } from '../../model/product-page';
 
 
 @Component({
