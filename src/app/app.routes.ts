@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { BannerComponent } from './components/banner/banner.component';
-import { ListproductsComponent } from './components/listproducts/listproducts.component';
-import { ReleaselistComponent } from './components/releaselist/releaselist.component';
+import { BannerComponent } from './components/layouts/banner/banner.component';
+import { ListproductsComponent } from './components/shared/listproducts/listproducts.component';
+import { ReleaselistComponent } from './components/shared/releaselist/releaselist.component';
 
 export const routes: Routes = [
   { path: '', component: BannerComponent},

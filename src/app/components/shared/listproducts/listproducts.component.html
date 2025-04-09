@@ -1,0 +1,43 @@
+@if(loading) {
+<div
+  style="background: rgba(0, 0, 0, 0.15)"
+  class="absolute h-[100vh] top-0 left-0 bottom-0 right-0 z-10 flex justify-center items-center"
+>
+  <mat-spinner></mat-spinner>
+</div>
+}@else {
+<mat-card appearance="outlined">
+  @if (data$ | async; as data) {
+  <app-table
+    [dataSource]="data.product"
+    [displayedColumns]="['codigo', 'nome', 'quantidade']"
+    [columnLabels]="{
+      codigo: 'Código',
+      nome: 'Descrição',
+      quantidade: 'Quantidade'
+    }"
+    [totalElements]="data.totalElements"
+    [pageSize]="pageSize"
+    [pageIndex]="pageIndex"
+    (pageChange)="refresh($event)"
+  >
+  </app-table>
+  }
+</mat-card>
+
+<div class="absolute right-4 top-4 flex justify-end items-center">
+  <button
+    (click)="abrirModalCadastro()"
+    type="button"
+    class="text-[#ed8d44] border-none bg-[#ffffff] hover:bg-[#fbf1de] focus:outline-none focus:bg-[#c8712f] font-bold rounded-full text-sm px-4 py-2 text-center"
+  >
+    Cadastrar Produto
+  </button>
+</div>
+
+@if(exibirModal == true) {
+<app-modal-produtos
+  (produtoAdicionado)="atualizarListaProduto($event)"
+  (fechar)="fecharModal()"
+></app-modal-produtos>
+} }

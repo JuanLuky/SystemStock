@@ -1,0 +1,26 @@
+@if (data$ | async; as data) {
+<mat-card class="" appearance="outlined">
+  <app-table
+    [dataSource]="data.movement"
+    [displayedColumns]="['tipo', 'quantidade', 'dataHora', 'produtoId']"
+    [columnLabels]="{
+      tipo: 'Tipo',
+      quantidade: 'Quantidade',
+      dataHora: 'Data',
+      produtoId: 'Produto'
+    }"
+    [totalElements]="data.totalElements"
+    [pageSize]="pageSize"
+    [pageIndex]="pageIndex"
+    (pageChange)="refresh($event)"
+  >
+  </app-table>
+</mat-card>
+} @else {
+<div
+  style="background: rgba(0, 0, 0, 0.15)"
+  class="absolute h-[100vh] top-0 left-0 bottom-0 right-0 z-10 flex justify-center items-center"
+>
+  <mat-spinner></mat-spinner>
+</div>
+}

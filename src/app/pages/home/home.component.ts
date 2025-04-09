@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
-import { SidebarComponent } from "../../components/sidebar/sidebar.component";
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from "../../components/header/header.component";
+import { HeaderComponent } from '../../components/layouts/header/header.component';
+import { SidebarComponent } from "../../components/layouts/sidebar/sidebar.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [SidebarComponent, RouterOutlet, HeaderComponent],
+  imports: [RouterOutlet, HeaderComponent, SidebarComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
 })
 export class HomeComponent {
 
