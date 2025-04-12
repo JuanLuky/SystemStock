@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from '../../components/layouts/header/header.component';
-import { SidebarComponent } from "../../components/layouts/sidebar/sidebar.component";
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, SidebarComponent],
+  imports: [MatCardModule],
   templateUrl: './home.component.html',
 })
 export class HomeComponent {

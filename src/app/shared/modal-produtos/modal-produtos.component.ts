@@ -1,8 +1,8 @@
 import { Component, EventEmitter, inject, Output } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
-import { StockHttpService } from '../../../core/services/stock.service';
-import type { Product } from '../../../model/Product';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { StockHttpService } from '../../core/services/stock.service';
+import type { Product } from '../../model/Product';
 
 @Component({
   selector: 'app-modal-produtos',

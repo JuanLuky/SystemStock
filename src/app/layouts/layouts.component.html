@@ -1,0 +1,16 @@
+<div class="w-full h-screen grid grid-rows-[auto_1fr] bg-gray-50">
+  <!-- Header -->
+     <app-header></app-header>
+
+  <!-- Sidebar + Main -->
+  <div class="grid grid-cols-[220px_1fr] gap-4">
+      <!-- Sidebar -->
+      <app-sidebar></app-sidebar>
+
+      <!-- Main -->
+      <main class="bg-gray-50 mr-4">
+          <router-outlet></router-outlet>
+      </main>
+  </div>
+</div>
+

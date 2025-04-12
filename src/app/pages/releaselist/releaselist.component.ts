@@ -16,9 +16,10 @@ import { MatInputModule } from '@angular/material/input';
 
 import { default as _rollupMoment } from 'moment';
 import { catchError, Observable, of, tap } from 'rxjs';
-import type { MovementPage } from '../../../model/movement-page';
-import { StockHttpService } from '../../../core/services/stock.service';
-import { TableComponent } from '../table/table.component';
+import { TableComponent } from '../../shared/table/table.component';
+import type { MovementPage } from '../../model/movement-page';
+import { StockHttpService } from '../../core/services/stock.service';
+
 
 @Component({
   selector: 'app-releaselist',

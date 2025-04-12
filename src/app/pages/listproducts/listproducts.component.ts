@@ -11,11 +11,11 @@ import {
 } from '@angular/material/paginator';
 import { catchError, of, Observable, tap, BehaviorSubject, delay } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import type { ProductPage } from '../../../model/product-page';
-import { StockHttpService } from '../../../core/services/stock.service';
-import { TableComponent } from '../table/table.component';
-import { ModalProdutosComponent } from '../modal-produtos/modal-produtos.component';
-import type { Product } from '../../../model/Product';
+import { TableComponent } from '../../shared/table/table.component';
+import { ModalProdutosComponent } from '../../shared/modal-produtos/modal-produtos.component';
+import type { ProductPage } from '../../model/product-page';
+import { StockHttpService } from '../../core/services/stock.service';
+import type { Product } from '../../model/Product';
 
 @Component({
   selector: 'app-listproducts',
@@ -29,7 +29,6 @@ import type { Product } from '../../../model/Product';
     AsyncPipe,
     TableComponent,
     CommonModule,
-    ModalProdutosComponent,
     ModalProdutosComponent,
   ],
   templateUrl: './listproducts.component.html',
