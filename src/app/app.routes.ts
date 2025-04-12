@@ -14,4 +14,9 @@ export const routes: Routes = [
   // { path: 'courses/edit/:id', component: FormsComponent,resolve: { course: courseResolver } },
 
   { path: '**', pathMatch: 'full', redirectTo: '/home'},
+  {
+    path: 'Home',
+    loadChildren: () =>
+      import('./pages/home/home.component').then(c => c.HomeComponent)
+  },
 ];
